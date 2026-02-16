@@ -41,6 +41,11 @@ body {
   margin: 0 auto;
 }
 
+/* More intentional composition: top-aligned content + generous vertical rhythm */
+.reveal .slides > section {
+  padding-top: 28px;
+}
+
 .reveal h1,
 .reveal h2,
 .reveal h3 {
@@ -109,13 +114,40 @@ small,
 /* Lists */
 .reveal ul,
 .reveal ol {
-  margin: 0.65em 0 0.2em 1.0em;
+  margin: 0.75em 0 0.2em 0;
   padding: 0;
 }
 
+.reveal ul {
+  list-style: none;
+}
+
+.reveal ul > li {
+  position: relative;
+  padding-left: 1.05em;
+}
+
+.reveal ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(245, 247, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.reveal ul > li.fragment.visible::before {
+  background: rgba(255, 77, 90, 0.55);
+  border-color: rgba(255, 77, 90, 0.65);
+}
+
 .reveal li {
-  margin: 0.38em 0;
+  margin: 0.44em 0;
   font-size: 1.06em;
+  line-height: 1.35;
 }
 
 .big-list li {
@@ -336,6 +368,18 @@ small,
   background: transparent;
   color: var(--muted);
   font-size: 0.78em;
+}
+
+/* Fragments: smoother and more readable */
+.reveal .fragment {
+  opacity: 0.15;
+  transform: translateY(8px);
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.reveal .fragment.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Reduce default Reveal heavy text-shadow */

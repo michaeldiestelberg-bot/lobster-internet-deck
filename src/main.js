@@ -30,8 +30,8 @@ const deck = new Reveal({
   hash: true,
   controls: true,
   progress: true,
-  center: true,
-  transition: 'fade',
+  center: false,
+  transition: 'slide',
   backgroundTransition: 'fade',
   slideNumber: 'c/t',
   width: 1280,
@@ -40,9 +40,10 @@ const deck = new Reveal({
   minScale: 0.5,
   maxScale: 1.15,
   navigationMode: 'linear',
+  controlsTutorial: false,
   autoAnimate: true,
-  autoAnimateDuration: 0.55,
-  autoAnimateEasing: 'ease-out',
+  autoAnimateDuration: 0.6,
+  autoAnimateEasing: 'cubic-bezier(.2,.8,.2,1)',
   plugins: [RevealNotes]
 });
 
