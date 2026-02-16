@@ -1,8 +1,8 @@
-# Agentic Internet / Lobster Internet
+# Lobster Internet Deck 🦞
 
-A Vite + Reveal.js slide deck with a lobster-red presentation theme.
+A web-based presentation (Vite + Reveal.js) on the **Agentic Internet / Lobster Internet**.
 
-## Quick start
+## Local dev
 
 ```bash
 npm install
@@ -13,6 +13,19 @@ npm run dev
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The production bundle is generated in `dist/`.
+## Deploy to Vercel
+
+This is a static Vite site:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+
+You can deploy via CLI:
+
+```bash
+vercel
+vercel --prod
+```

@@ -1,7 +1,7 @@
 {
   "name": "lobster-internet-deck",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "reveal.js": "^5.2.1"
+    "reveal.js": "^5.1.0"
   },
   "devDependencies": {
-    "vite": "^6.2.0"
+    "vite": "^5.4.0"
   }
 }
