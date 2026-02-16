@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+html,
+body {
+  height: 100%;
+}
+
 :root {
   --bg: #05060a;
   --panel: rgba(12, 15, 24, 0.78);
@@ -24,6 +29,16 @@ body {
     radial-gradient(900px 520px at 18% 18%, rgba(255, 77, 90, 0.14), transparent 55%),
     radial-gradient(900px 520px at 78% 14%, rgba(255, 184, 107, 0.10), transparent 60%),
     radial-gradient(800px 560px at 70% 76%, rgba(90, 140, 255, 0.10), transparent 60%);
+}
+
+/* Ensure Reveal has real height (otherwise slides can render off-screen) */
+.deck-shell {
+  min-height: 100vh;
+}
+
+.reveal,
+.reveal-viewport {
+  height: 100%;
 }
 
 /* Reveal wraps the deck in a viewport element that defaults to white */
