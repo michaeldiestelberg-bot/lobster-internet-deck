@@ -30,7 +30,7 @@ const deck = new Reveal({
   hash: true,
   controls: true,
   progress: true,
-  center: false,
+  center: true,
   transition: 'slide',
   backgroundTransition: 'fade',
   slideNumber: 'c/t',

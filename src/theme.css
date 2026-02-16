@@ -47,9 +47,9 @@ body {
   margin: 0 auto;
 }
 
-/* More intentional composition: top-aligned content + generous vertical rhythm */
+/* Composition: keep a little breathing room without fighting Reveal layout */
 .reveal .slides > section {
-  padding-top: 28px;
+  padding-top: 10px;
 }
 
 .reveal h1,
