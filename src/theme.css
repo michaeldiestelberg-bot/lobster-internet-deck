@@ -18,11 +18,17 @@
 /* Page background */
 body {
   margin: 0;
-  background:
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
     radial-gradient(900px 520px at 18% 18%, rgba(255, 77, 90, 0.14), transparent 55%),
     radial-gradient(900px 520px at 78% 14%, rgba(255, 184, 107, 0.10), transparent 60%),
-    radial-gradient(800px 560px at 70% 76%, rgba(90, 140, 255, 0.10), transparent 60%),
-    var(--bg);
+    radial-gradient(800px 560px at 70% 76%, rgba(90, 140, 255, 0.10), transparent 60%);
+}
+
+/* Reveal wraps the deck in a viewport element that defaults to white */
+.reveal-viewport {
+  background: var(--bg);
 }
 
 /* Reveal base */
