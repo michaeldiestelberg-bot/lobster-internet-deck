@@ -1,0 +1,74 @@
+:root {
+  --lobster-red: #d72638;
+  --lobster-red-soft: #ff6774;
+  --ink: #f8f2f2;
+  --bg: #120b0b;
+}
+
+body {
+  background: radial-gradient(circle at 20% 10%, #2b0f11 0%, #120b0b 65%);
+}
+
+.reveal {
+  color: var(--ink);
+  font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+}
+
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--lobster-red);
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.reveal h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.reveal p,
+.reveal li {
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+.reveal ul,
+.reveal ol {
+  margin-left: 1.25rem;
+}
+
+.reveal .kicker {
+  color: var(--lobster-red-soft);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.3rem;
+}
+
+.reveal .lead {
+  max-width: 46rem;
+}
+
+.reveal .callout {
+  border-left: 4px solid var(--lobster-red);
+  padding-left: 0.8rem;
+  margin: 0.8rem 0;
+}
+
+.reveal .progress {
+  color: var(--lobster-red);
+}
+
+.reveal a {
+  color: var(--lobster-red-soft);
+}
