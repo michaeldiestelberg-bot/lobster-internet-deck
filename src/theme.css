@@ -33,7 +33,7 @@ body {
 
 /* Ensure Reveal has real height (otherwise slides can render off-screen) */
 .deck-shell {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .reveal,
