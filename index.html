@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agentic Internet / Lobster Internet</title>
+    <meta name="description" content="A keynote-style deck on the Agentic Internet (aka the Lobster Internet)." />
   </head>
   <body>
-    <!-- UI chrome (brand + section label). Slide number is handled by Reveal. -->
+    <!-- UI chrome (brand + footer) -->
     <div class="ui-chrome" aria-hidden="true">
       <div class="brand">
         <span class="dot"></span>
@@ -19,411 +20,400 @@
             <span data-ui="section">Agentic Internet</span>
           </span>
         </div>
-        <div class="hint">S = speaker view</div>
+        <div class="meta">Press <span class="accent">S</span> for speaker view</div>
       </div>
     </div>
 
-    <div class="reveal">
-      <div class="slides">
-        <!-- Title -->
-        <section
-          data-section="Intro"
-          data-background-gradient="radial-gradient(circle at 18% 18%, rgba(255,77,90,0.34), rgba(5,6,10,0.92) 45%, rgba(5,6,10,0.98))"
-        >
-          <h1>Agentic Internet</h1>
-          <p class="subtitle">aka the <span class="accent">Lobster Internet</span></p>
-          <div class="panel" style="margin-top: 1.0em">
-            <p class="lead" style="margin: 0">
-              A narrative on <span class="accent">markets</span>, <span class="accent">pricing</span>, and <span class="accent">org design</span> in an agent-first world.
-            </p>
-            <p class="kicker" style="margin-bottom: 0">
-              From “using software” → to “delegating outcomes”.
-            </p>
-          </div>
-          <aside class="notes">
-            Frame it as an interface shift: from software UIs for humans → outcomes delivered by fleets of agents.
-            "Lobster internet" is shorthand: lots of autonomous little creatures crawling the web doing work.
-          </aside>
-        </section>
-
-        <!-- Agenda -->
-        <section data-section="Intro">
-          <h2>Agenda</h2>
-          <ol class="big-list">
-            <li class="fragment">What is the Agentic (Lobster) Internet?</li>
-            <li class="fragment">What does it mean for Mapp?</li>
-            <li class="fragment">What do we need to do next?</li>
-          </ol>
-          <aside class="notes">Keep it crisp: definition → implications → execution.</aside>
-        </section>
-
-        <!-- Section 1 divider -->
-        <section
-          class="section-divider"
-          data-section="1 — Lobster Internet"
-          data-background-gradient="linear-gradient(135deg, rgba(255,77,90,0.24), rgba(5,6,10,0.96))"
-        >
-          <p class="eyebrow">Section 1</p>
-          <h2>Agentic Internet / Lobster Internet</h2>
-          <p class="sub">When “using software” becomes “delegating outcomes”.</p>
-          <aside class="notes">The core claim: we’re moving from tools to teammates.</aside>
-        </section>
-
-        <section data-section="1 — Lobster Internet" data-auto-animate>
-          <h2>The Thesis</h2>
-          <p class="lead">Everyone will have <span class="accent">multiple AI agents</span> working different jobs.</p>
-          <div class="panel diagram" data-auto-animate>
-            <div class="flow" data-auto-animate>
-              <div class="pill" data-auto-animate>Tool</div>
-              <div class="arrow" data-auto-animate></div>
-              <div class="pill" data-auto-animate style="border-color: rgba(255,77,90,0.35)">Teammate</div>
+    <div class="deck-shell">
+      <div class="reveal">
+        <div class="slides">
+          <!-- Title -->
+          <section
+            data-section="Intro"
+            data-background-gradient="radial-gradient(900px 520px at 18% 18%, rgba(255,77,90,0.22), transparent 55%), radial-gradient(900px 520px at 78% 14%, rgba(255,184,107,0.14), transparent 60%), linear-gradient(180deg, rgba(5,6,10,0.88), rgba(5,6,10,0.98))"
+          >
+            <h1>Agentic Internet</h1>
+            <h2 class="subtitle">aka the <span class="accent">Lobster Internet</span></h2>
+            <div class="panel" style="margin-top: 1.1em">
+              <p class="lead" style="margin-top: 0">A narrative deck on markets, pricing, and org design in an agent-first world.</p>
+              <p class="muted" style="margin-bottom: 0">From “using software” to “delegating outcomes”.</p>
             </div>
-            <div class="grid-2" style="margin-top: 0.9em">
-              <div class="card">
-                <h4>Specialized roles</h4>
-                <p class="muted" style="margin: 0">Marketing, support, analytics, ops…</p>
-              </div>
-              <div class="card">
-                <h4>Persistent execution</h4>
-                <p class="muted" style="margin: 0">Memory + skills + loops + guardrails</p>
-              </div>
-            </div>
-          </div>
-          <aside class="notes">Sell specialization and integration, not magic. Narrow, reliable agents win.</aside>
-        </section>
+            <aside class="notes">
+              Frame it as an interface shift: software UIs for humans → outcomes delivered by fleets of agents.
+              "Lobster internet" is shorthand: many autonomous little workers crawling the web doing jobs.
+            </aside>
+          </section>
 
-        <section data-section="1 — Lobster Internet">
-          <h2>Vertical Bundles Will Win Early</h2>
-          <p class="lead">The next market is <span class="accent">pre-configured agents</span> you can buy.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h4>What’s bundled</h4>
-              <ul>
-                <li class="fragment">Skills</li>
-                <li class="fragment">Memory schema</li>
-                <li class="fragment">Workflows</li>
-              </ul>
-            </div>
-            <div class="card">
-              <h4>Why it works</h4>
-              <ul>
-                <li class="fragment">Opinionated by job</li>
-                <li class="fragment">Faster time-to-value</li>
-                <li class="fragment">Clearer expectations</li>
-              </ul>
-            </div>
-          </div>
-          <aside class="notes">This starts as templates + integrations. It hardens into products with guarantees.</aside>
-        </section>
-
-        <section data-section="1 — Lobster Internet">
-          <h2>Agents Become Employees</h2>
-          <p class="lead">We’ll manage agents like an org.</p>
-          <div class="grid-2">
+          <!-- Agenda -->
+          <section data-section="Intro">
+            <h2>Agenda</h2>
             <div class="panel">
-              <h3>They get</h3>
-              <ul>
-                <li class="fragment">Job titles</li>
-                <li class="fragment">Goals & KPIs</li>
-                <li class="fragment">Operating constraints</li>
-              </ul>
+              <ol class="big-list">
+                <li class="fragment">What is the Agentic (Lobster) Internet?</li>
+                <li class="fragment">What does it mean for Mapp?</li>
+                <li class="fragment">What do we need to do next?</li>
+              </ol>
             </div>
+            <aside class="notes">Keep it crisp: definition → implications → execution.</aside>
+          </section>
+
+          <!-- Section 1 divider -->
+          <section
+            class="section-divider"
+            data-section="Agentic Internet"
+            data-background-gradient="linear-gradient(135deg, rgba(255,77,90,0.18), rgba(5,6,10,0.96))"
+          >
+            <p class="eyebrow">Section 1</p>
+            <h2>Agentic Internet / Lobster Internet</h2>
+            <p class="sub">When “using software” becomes “delegating outcomes”.</p>
+            <aside class="notes">The core claim: we’re moving from tools to teammates.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>The Thesis</h2>
+            <p class="lead">Everyone will have <span class="accent">multiple AI agents</span> working different jobs.</p>
+            <div class="grid-2 diagram">
+              <div class="panel">
+                <h3>What changes</h3>
+                <ul>
+                  <li class="fragment">Specialized roles (marketing, support, analytics, ops)</li>
+                  <li class="fragment">Persistent context (memory) + capabilities (skills)</li>
+                  <li class="fragment">Always-on execution loops</li>
+                </ul>
+              </div>
+              <div class="panel">
+                <h3>Simple model</h3>
+                <div class="flow">
+                  <div class="pill" data-id="tool" data-auto-animate-id="tool">Tool</div>
+                  <div class="arrow" aria-hidden="true"></div>
+                  <div class="pill" data-id="teammate" data-auto-animate-id="teammate"><span class="accent">Teammate</span></div>
+                </div>
+                <p class="small" style="margin-top: 0.8em">
+                  Agents shift value from features → <span class="accent">execution</span>.
+                </p>
+              </div>
+            </div>
+            <aside class="notes">Don’t oversell AGI. Sell specialization + integration + reliability.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>Vertical Bundles Will Win Early</h2>
+            <p class="lead">The next market is <span class="accent">pre-configured agents</span> you can buy.</p>
             <div class="panel">
-              <h3>We expect</h3>
               <ul>
-                <li class="fragment">Consistency</li>
-                <li class="fragment">Traceability</li>
-                <li class="fragment">Performance</li>
+                <li class="fragment">Packaged: skills + memory schema + workflows</li>
+                <li class="fragment">Opinionated: “Lifecycle marketer agent”, “Data hygiene agent”</li>
+                <li class="fragment">First customers are humans… but agent-to-agent markets follow</li>
               </ul>
             </div>
-          </div>
-          <aside class="notes">Management practices show up: OKRs, reviews, incident postmortems, audit trails.</aside>
-        </section>
+            <aside class="notes">This starts as templates + integrations, then hardens into products with guarantees.</aside>
+          </section>
 
-        <section data-section="1 — Lobster Internet">
-          <h2>The Next Evolution of SaaS</h2>
-          <p class="lead">You won’t buy “marketing software”. You’ll buy <span class="accent">outcomes</span>.</p>
-          <div class="callout">
-            <p class="metric">“Deliver +5% repeat purchase rate.”</p>
-            <p class="muted" style="margin: 0.25em 0 0">Software becomes an implementation detail behind the agent.</p>
-          </div>
-          <aside class="notes">Emphasize buyer psychology: outcomes are easier to justify than tooling.</aside>
-        </section>
-
-        <section data-section="1 — Lobster Internet" data-auto-animate>
-          <h2>Pricing Shifts to Performance</h2>
-          <p class="lead">Subscription for truth. Performance for change.</p>
-          <div class="panel diagram" data-auto-animate>
-            <div class="bar" data-auto-animate>
-              <div class="subscr" data-auto-animate>
-                <h4 style="margin:0 0 0.25em">System of record</h4>
-                <p class="muted" style="margin:0">Subscription (CRM, ERP, CDP…)</p>
+          <section data-section="Agentic Internet">
+            <h2>Agents Become Employees</h2>
+            <p class="lead">We’ll manage agents like an org.</p>
+            <div class="grid-2">
+              <div class="card">
+                <h4>They get</h4>
+                <ul>
+                  <li class="fragment">Job titles</li>
+                  <li class="fragment">Goals & KPIs</li>
+                  <li class="fragment">Operating constraints</li>
+                </ul>
               </div>
-              <div class="perf" data-auto-animate>
-                <h4 style="margin:0 0 0.25em">Agents</h4>
-                <p class="muted" style="margin:0">Performance fees</p>
+              <div class="card">
+                <h4>We expect</h4>
+                <ul>
+                  <li class="fragment">Consistency</li>
+                  <li class="fragment">Traceability</li>
+                  <li class="fragment">Performance</li>
+                </ul>
               </div>
             </div>
-            <ul style="margin-top: 0.8em">
-              <li class="fragment">Sold individually or bundled</li>
-              <li class="fragment">Measured against a system-of-record baseline</li>
-            </ul>
-          </div>
-          <aside class="notes">Clean separation: subscription for access; performance for outcomes.</aside>
-        </section>
+            <aside class="notes">Management practices show up: OKRs, reviews, incident postmortems, audit trails.</aside>
+          </section>
 
-        <section data-section="1 — Lobster Internet">
-          <h2>Agent-Native Apps Emerge</h2>
-          <p class="lead">Some apps will be built <span class="accent">for agents</span>, not humans.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h4>Primary UX</h4>
-              <p class="muted" style="margin:0">APIs + contracts + policies</p>
+          <section data-section="Agentic Internet">
+            <h2>The Next Evolution of SaaS</h2>
+            <p class="lead">You won’t buy “marketing software”. You’ll buy <span class="accent">outcomes</span>.</p>
+            <div class="callout">
+              <p class="metric">“Deliver +5% repeat purchase rate.”</p>
+              <p class="muted" style="margin: 0.4em 0 0">Software becomes an implementation detail behind the agent.</p>
             </div>
-            <div class="card">
-              <h4>Early signal</h4>
-              <p class="muted" style="margin:0">Skills marketplaces</p>
+            <aside class="notes">Buyer psychology: outcomes are easier to justify than tooling.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>Pricing Shifts to Performance</h2>
+            <p class="lead">Subscription for truth + <span class="accent">performance fees</span> for change.</p>
+            <div class="panel diagram">
+              <div class="bar">
+                <div class="subscr">
+                  <h4 style="margin:0">System of record</h4>
+                  <p class="muted" style="margin:0.35em 0 0">CRM / ERP / CDP — subscription</p>
+                </div>
+                <div class="perf">
+                  <h4 style="margin:0">Agents</h4>
+                  <p class="muted" style="margin:0.35em 0 0">Outcome uplift — performance fee</p>
+                </div>
+              </div>
+              <ul style="margin-top: 0.9em">
+                <li class="fragment">Sold individually or as bundles</li>
+                <li class="fragment">Clean contract: measure outcome + verify attribution</li>
+              </ul>
             </div>
-          </div>
-          <aside class="notes">Agent-native = machine-readable workflows, strong semantics, reliable guarantees.</aside>
-        </section>
+            <aside class="notes">Separation: subscription for access & truth; performance for uplift.</aside>
+          </section>
 
-        <section data-section="1 — Lobster Internet">
-          <h2>On-Prem Agents Become Huge</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Private models + internal data + approved workflows</li>
-              <li class="fragment">Compliance-heavy industries (finance, health)</li>
-              <li class="fragment">Requires <span class="accent">traceability</span> and <span class="accent">certification</span></li>
-            </ul>
-          </div>
-          <aside class="notes">This is the “SOC2 of agents” world: every action explainable and auditable.</aside>
-        </section>
-
-        <section data-section="1 — Lobster Internet">
-          <h2>Operations Get Abstracted</h2>
-          <p class="lead">People won’t think in infra. They’ll think in outcomes.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h4>Today</h4>
-              <p class="muted" style="margin:0">Prompts, tools, tokens, logs</p>
+          <section data-section="Agentic Internet">
+            <h2>Agent-Native Apps Emerge</h2>
+            <p class="lead">Some apps will be built <span class="accent">for agents</span>, not humans.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Interfaces optimized for programmatic use, not UI clicks</li>
+                <li class="fragment">Skills marketplaces are an early signal</li>
+                <li class="fragment">APIs + contracts become the primary UX</li>
+              </ul>
             </div>
-            <div class="card">
-              <h4>Tomorrow</h4>
-              <p class="muted" style="margin:0">“Make this happen” + proof</p>
+            <aside class="notes">Agent-native = machine-readable workflows, semantics, guarantees.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>On-Prem Agents Become Huge</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Private models + internal data + approved workflows</li>
+                <li class="fragment">Compliance-heavy industries (finance, health)</li>
+                <li class="fragment">Requires <span class="accent">traceability</span> and <span class="accent">certification</span></li>
+              </ul>
             </div>
-          </div>
-          <p class="small" style="margin-top: 0.8em">OpenClaw through Telegram/WhatsApp is an early sign.</p>
-          <aside class="notes">Compare to cloud: we used to provision servers; now we provision outcomes.</aside>
-        </section>
+            <aside class="notes">This is the “SOC2 of agents” world: every action explainable and auditable.</aside>
+          </section>
 
-        <section data-section="1 — Lobster Internet">
-          <h2>Agent-Native Companies</h2>
-          <p class="lead"><span class="accent">3 people</span> and <span class="accent">300 agents</span>.</p>
-          <div class="panel">
-            <ul>
-              <li class="fragment">What does the org chart look like?</li>
-              <li class="fragment">How do you hire / fire / promote agents?</li>
-              <li class="fragment">How do you coordinate and measure performance?</li>
-            </ul>
-          </div>
-          <aside class="notes">Shock to management theory. It becomes a systems design problem.</aside>
-        </section>
-
-        <section data-section="1 — Lobster Internet">
-          <h2>Operators Become a New Power User</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Operators design systems others rent</li>
-              <li class="fragment">Every SaaS + agents needs a marketplace for operators</li>
-              <li class="fragment">Operators sell proven systems, not just advice</li>
-            </ul>
-          </div>
-          <aside class="notes">“Operator” is to agents what “developer” was to software platforms.</aside>
-        </section>
-
-        <!-- Section 2 divider -->
-        <section
-          class="section-divider"
-          data-section="2 — Implications for Mapp"
-          data-background-gradient="linear-gradient(135deg, rgba(255,77,90,0.22), rgba(5,6,10,0.96))"
-        >
-          <p class="eyebrow">Section 2</p>
-          <h2>What does this mean for Mapp?</h2>
-          <p class="sub">System-of-record + agent execution = compounding advantage.</p>
-          <aside class="notes">Bridge from macro trends to strategy: what we should build and defend.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>APIs for Everything (Priority 0)</h2>
-          <p class="lead">APIs aren’t a feature. They’re survival.</p>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Make core capabilities programmatically accessible</li>
-              <li class="fragment">Layer other interfaces (MCP, etc.) — but <span class="accent">APIs first</span></li>
-              <li class="fragment">Agents need reliable contracts, not buttons</li>
-            </ul>
-          </div>
-          <aside class="notes">If it isn’t API-addressable, it isn’t agent-addressable.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>Data Needs Meaning</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Evolve structure: encode meaning (ontologies)</li>
-              <li class="fragment">Continuously improve capture & normalization</li>
-              <li class="fragment">System-of-record for customer + product data is the foundation</li>
-            </ul>
-          </div>
-          <aside class="notes">Agents fail on ambiguous data. Ontologies reduce ambiguity and automate workflows.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>Channels Keep Changing</h2>
-          <p class="lead">Data capture must evolve with emerging channels.</p>
-          <div class="panel">
-            <ul>
-              <li class="fragment">New channels appear faster than UI features can ship</li>
-              <li class="fragment">APIs + ingest pipelines become strategic</li>
-              <li class="fragment">Stay the system-of-record as the world fragments</li>
-            </ul>
-          </div>
-          <aside class="notes">Agents will operate across channels; Mapp should be the memory + execution backbone.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>From Skilled People → Agent Studio</h2>
-          <p class="lead">Mapp already has the foundation — but it’s labor-intensive.</p>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Today: highly skilled people deliver great outcomes</li>
-              <li class="fragment">Tomorrow: agents deliver those outcomes repeatedly</li>
-              <li class="fragment">Agent Studio scales expertise</li>
-            </ul>
-          </div>
-          <aside class="notes">This is the “productize your best operators” story.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>Offer Vertical Bundles</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Ship our own agents as opinionated bundles</li>
-              <li class="fragment">Package workflows + data model assumptions</li>
-              <li class="fragment">Over time: price based on performance</li>
-            </ul>
-          </div>
-          <aside class="notes">Start with predictable use cases (retention, lifecycle, recommendations) then expand.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>Build a Partner Marketplace</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Partners sell agents into Mapp’s ecosystem</li>
-              <li class="fragment">Access verticals where we lack domain expertise</li>
-              <li class="fragment">Marketplace becomes a distribution flywheel</li>
-            </ul>
-          </div>
-          <aside class="notes">Key: governance + certification so buyers trust outcomes.</aside>
-        </section>
-
-        <section data-section="2 — Implications for Mapp">
-          <h2>Three Interfaces</h2>
-          <p class="lead">Design for humans, developers, and agents — simultaneously.</p>
-          <div class="grid-3 diagram">
-            <div class="card" data-id="humans">
-              <h4><span class="accent">1)</span> Humans</h4>
-              <p class="muted" style="margin:0">Dashboards, builders, approvals.</p>
+          <section data-section="Agentic Internet">
+            <h2>Operations Will Get Abstracted</h2>
+            <p class="lead">People won’t think in infra. They’ll think in outcomes.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Today: prompts, tools, tokens, logs</li>
+                <li class="fragment">Tomorrow: “make this happen” + proof</li>
+                <li class="fragment">OpenClaw via Telegram/WhatsApp is an early sign</li>
+              </ul>
             </div>
-            <div class="card" data-id="devs">
-              <h4><span class="accent">2)</span> Developers</h4>
-              <p class="muted" style="margin:0">APIs, SDKs, webhooks, data contracts.</p>
+            <aside class="notes">Compare to cloud: from servers to outcomes.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>Agent-Native Companies</h2>
+            <p class="lead"><span class="accent">3 people</span> and <span class="accent">300 agents</span>.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">What does the org chart look like?</li>
+                <li class="fragment">How do you hire / fire / promote agents?</li>
+                <li class="fragment">How do you coordinate and measure performance?</li>
+              </ul>
             </div>
-            <div class="card" data-id="agents" style="border-color: rgba(255,77,90,0.30)">
-              <h4><span class="accent">3)</span> Agents</h4>
-              <p class="muted" style="margin:0">Tools, policies, evals, audit logs.</p>
+            <aside class="notes">Shock to management theory: becomes a systems design problem.</aside>
+          </section>
+
+          <section data-section="Agentic Internet">
+            <h2>Operators Become a New Power User</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Operators design systems others rent</li>
+                <li class="fragment">Every SaaS + agents needs a marketplace for operators</li>
+                <li class="fragment">Distribution shifts: operators sell proven systems, not just advice</li>
+              </ul>
             </div>
-          </div>
-          <aside class="notes">The agent interface includes guardrails + observability + evaluation, not just an API.</aside>
-        </section>
+            <aside class="notes">Operator is to agents what developer was to platforms.</aside>
+          </section>
 
-        <!-- Section 3 divider -->
-        <section
-          class="section-divider"
-          data-section="3 — What we do next"
-          data-background-gradient="linear-gradient(135deg, rgba(255,77,90,0.20), rgba(5,6,10,0.96))"
-        >
-          <p class="eyebrow">Section 3</p>
-          <h2>What do we need to do?</h2>
-          <p class="sub">Execution speed becomes the moat.</p>
-          <aside class="notes">Turn this into an operating plan, not just a vision.</aside>
-        </section>
+          <!-- Section 2 divider -->
+          <section
+            class="section-divider"
+            data-section="Mapp"
+            data-background-gradient="linear-gradient(135deg, rgba(90,140,255,0.12), rgba(5,6,10,0.96))"
+          >
+            <p class="eyebrow">Section 2</p>
+            <h2>What does this mean for Mapp?</h2>
+            <p class="sub">System-of-record + agent execution = compounding advantage.</p>
+            <aside class="notes">Bridge macro trends to strategy: what we should build and defend.</aside>
+          </section>
 
-        <section data-section="3 — What we do next">
-          <h2>Move Faster (Measure It)</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Agentic engineering becomes the default</li>
-              <li class="fragment">Instrument: cycle time, throughput, quality, incidents</li>
-              <li class="fragment">Make speed a first-class KPI</li>
-            </ul>
-          </div>
-          <aside class="notes">If you can’t measure execution speed, you can’t improve it.</aside>
-        </section>
+          <section data-section="Mapp">
+            <h2>APIs for Everything (Priority 0)</h2>
+            <p class="lead">APIs aren’t a feature. They’re survival.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Make core capabilities programmatically accessible</li>
+                <li class="fragment">Layer other interfaces (MCP, etc.) — but <span class="accent">APIs first</span></li>
+                <li class="fragment">Agents need reliable contracts, not buttons</li>
+              </ul>
+            </div>
+            <aside class="notes">If it isn’t API-addressable, it isn’t agent-addressable.</aside>
+          </section>
 
-        <section data-section="3 — What we do next">
-          <h2>API-First Everything</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Treat existing systems as the foundation</li>
-              <li class="fragment">Expose capabilities via API with clear contracts</li>
-              <li class="fragment">Agents need composable primitives</li>
-            </ul>
-          </div>
-          <aside class="notes">Make it easy to automate: idempotency, webhooks, strong schemas.</aside>
-        </section>
+          <section data-section="Mapp">
+            <h2>Data Needs Meaning</h2>
+            <p class="lead">Agents fail on ambiguity. Structure is leverage.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Evolve structure: encode meaning (ontologies)</li>
+                <li class="fragment">Continuously improve capture & normalization</li>
+                <li class="fragment">System-of-record for customer + product data is the foundation</li>
+              </ul>
+            </div>
+            <aside class="notes">Ontologies reduce ambiguity and automate workflows.</aside>
+          </section>
 
-        <section data-section="3 — What we do next">
-          <h2>Greenfield Where It Helps</h2>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Build new systems greenfield where possible</li>
-              <li class="fragment">Modern architecture → faster iteration</li>
-              <li class="fragment">Keep integration points stable</li>
-            </ul>
-          </div>
-          <aside class="notes">Not rewrite-everything. Selective greenfield to gain velocity.</aside>
-        </section>
+          <section data-section="Mapp">
+            <h2>Channels Keep Changing</h2>
+            <p class="lead">Data capture must evolve with emerging channels.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">New channels appear faster than UI features ship</li>
+                <li class="fragment">APIs + ingest pipelines become strategic</li>
+                <li class="fragment">Stay the system-of-record as the world fragments</li>
+              </ul>
+            </div>
+            <aside class="notes">Mapp should be the memory + execution backbone across channels.</aside>
+          </section>
 
-        <section data-section="3 — What we do next">
-          <h2>Manage Customer Pain</h2>
-          <p class="lead">Existing customers will suffer — we need to tolerate and manage this.</p>
-          <div class="panel">
-            <ul>
-              <li class="fragment">Migration paths + compatibility policies</li>
-              <li class="fragment">Transparent comms and support strategies</li>
-              <li class="fragment">Invest in safety rails and rollback</li>
-            </ul>
-          </div>
-          <aside class="notes">Speed without trust backfires. The goal is “fast, but safe.”</aside>
-        </section>
+          <section data-section="Mapp">
+            <h2>From Skilled People → Agent Studio</h2>
+            <p class="lead">Mapp has the foundation — but it’s labor-intensive today.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Today: highly skilled people deliver great outcomes</li>
+                <li class="fragment">Tomorrow: agents deliver those outcomes repeatedly</li>
+                <li class="fragment">Agent Studio scales expertise into product</li>
+              </ul>
+            </div>
+            <aside class="notes">Productize your best operators.</aside>
+          </section>
 
-        <!-- Closing -->
-        <section
-          data-section="Close"
-          data-background-gradient="radial-gradient(circle at 82% 18%, rgba(255,77,90,0.26), rgba(5,6,10,0.95))"
-        >
-          <h2>Q&amp;A</h2>
-          <div class="panel" style="margin-top: 0.9em">
-            <p class="lead" style="margin: 0">What should we build first?</p>
-            <p class="muted" style="margin: 0.35em 0 0">
-              Candidate prompts: Which vertical bundle is most obvious? What’s our API roadmap? How do we certify agents?
-            </p>
-          </div>
-          <aside class="notes">End by pulling the room into prioritization.</aside>
-        </section>
+          <section data-section="Mapp">
+            <h2>Offer Vertical Bundles</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Ship our own agents as opinionated bundles</li>
+                <li class="fragment">Package workflows + data model assumptions</li>
+                <li class="fragment">Over time: price based on performance</li>
+              </ul>
+            </div>
+            <aside class="notes">Start with predictable use cases (retention, lifecycle, recommendations).</aside>
+          </section>
+
+          <section data-section="Mapp">
+            <h2>Build a Partner Marketplace</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Partners sell agents into Mapp’s ecosystem</li>
+                <li class="fragment">Access verticals where we lack domain expertise</li>
+                <li class="fragment">Marketplace becomes a distribution flywheel</li>
+              </ul>
+            </div>
+            <aside class="notes">Governance + certification: buyers must trust outcomes.</aside>
+          </section>
+
+          <section data-section="Mapp">
+            <h2>Three Interfaces</h2>
+            <p class="lead">Design for humans, developers, and agents — simultaneously.</p>
+            <div class="grid-3 diagram" data-auto-animate-id="interfaces">
+              <div class="card" data-auto-animate-id="humans">
+                <h4>1) Humans</h4>
+                <p class="muted">Dashboards, builders, approvals.</p>
+              </div>
+              <div class="card" data-auto-animate-id="devs">
+                <h4>2) Developers</h4>
+                <p class="muted">APIs, SDKs, webhooks, data contracts.</p>
+              </div>
+              <div class="card" data-auto-animate-id="agents">
+                <h4>3) Agents</h4>
+                <p class="muted">Tools/workflows, policies, evals, audit logs.</p>
+              </div>
+            </div>
+            <aside class="notes">Agent interface is not just an API: includes guardrails, observability, evaluation.</aside>
+          </section>
+
+          <!-- Section 3 divider -->
+          <section
+            class="section-divider"
+            data-section="Execution"
+            data-background-gradient="linear-gradient(135deg, rgba(255,184,107,0.10), rgba(5,6,10,0.96))"
+          >
+            <p class="eyebrow">Section 3</p>
+            <h2>What do we need to do?</h2>
+            <p class="sub">Execution speed becomes the moat.</p>
+            <aside class="notes">Turn vision into an operating plan.</aside>
+          </section>
+
+          <section data-section="Execution">
+            <h2>Move Faster (Measure It)</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Agentic engineering becomes the default</li>
+                <li class="fragment">Instrument: cycle time, throughput, quality, incidents</li>
+                <li class="fragment">Make speed a first-class KPI</li>
+              </ul>
+            </div>
+            <aside class="notes">If you can’t measure speed, you can’t improve it.</aside>
+          </section>
+
+          <section data-section="Execution">
+            <h2>API-First Everything</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Treat existing systems as the foundation</li>
+                <li class="fragment">Expose capabilities via API with clear contracts</li>
+                <li class="fragment">Agents need composable primitives</li>
+              </ul>
+            </div>
+            <aside class="notes">Make automation easy: idempotency, webhooks, strong schemas.</aside>
+          </section>
+
+          <section data-section="Execution">
+            <h2>Greenfield Where It Helps</h2>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Build new systems as greenfield when possible</li>
+                <li class="fragment">Modern architecture → faster iteration</li>
+                <li class="fragment">Keep integration points stable</li>
+              </ul>
+            </div>
+            <aside class="notes">Not rewrite-everything. Selective greenfield to gain velocity.</aside>
+          </section>
+
+          <section data-section="Execution">
+            <h2>Manage Customer Pain</h2>
+            <p class="lead">Existing customers will suffer — tolerate it, but manage it.</p>
+            <div class="panel">
+              <ul>
+                <li class="fragment">Migration paths + compatibility policies</li>
+                <li class="fragment">Transparent comms and support strategies</li>
+                <li class="fragment">Safety rails and rollback</li>
+              </ul>
+            </div>
+            <aside class="notes">Speed without trust backfires. Aim for “fast, but safe.”</aside>
+          </section>
+
+          <!-- Closing -->
+          <section
+            data-section="Q&A"
+            data-background-gradient="radial-gradient(900px 520px at 78% 18%, rgba(255,77,90,0.20), transparent 60%), linear-gradient(180deg, rgba(5,6,10,0.88), rgba(5,6,10,0.98))"
+          >
+            <h2>Q&amp;A</h2>
+            <div class="panel" style="margin-top: 1.0em">
+              <p class="lead" style="margin:0">What should we build first?</p>
+              <p class="muted" style="margin:0.6em 0 0">
+                Seed prompts: which vertical bundle is most obvious? what’s the API roadmap? how do we certify agents?
+              </p>
+            </div>
+            <aside class="notes">
+              Invite discussion. If asked for a recommendation: start with API priority 0, then 1-2 high-ROI bundles, then partner marketplace.
+            </aside>
+          </section>
+        </div>
       </div>
     </div>
 
